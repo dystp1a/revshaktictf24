@@ -1,6 +1,7 @@
 
 ![Screenshot 2024-03-10 054402](https://github.com/dystp1a/revshaktictf24/assets/143863591/77584c38-878b-4218-9895-6bb51ebad6ed)
 ![Screenshot 2024-03-10 054416](https://github.com/dystp1a/revshaktictf24/assets/143863591/0b155135-301b-448b-8eb1-825523f864b3)
+
 We quickly find that the binary is using `rand` and `srand`.
 
 The man page states the following for `srand`.
