@@ -25,7 +25,7 @@ The srand() function sets its argument as the seed for a new sequence  of
 ![Screenshot 2024-03-10 054402](https://github.com/dystp1a/revshaktictf24/assets/143863591/77584c38-878b-4218-9895-6bb51ebad6ed)
 ![Screenshot 2024-03-10 054416](https://github.com/dystp1a/revshaktictf24/assets/143863591/0b155135-301b-448b-8eb1-825523f864b3)
 
-In each iteration, the AND operation is performed on the result of rand() with 15, and the outcome is stored in v8. Subsequently, this value is XORed with each character of the input provided. Through a loop, the program checks if the result matches the values stored in v9.
+In each iteration, the AND operation is performed on the result of rand() with 15 (this operation sets the result to the lowest 4 bits of the original number), and the outcome is stored in v8. Subsequently, this value is XORed with each character of the input provided. Through a loop, the program checks if the result matches the values stored in v9.
 
 By XORing the rand() values with the given decimals, the flag is derived.
 
