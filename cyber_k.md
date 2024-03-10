@@ -22,9 +22,9 @@ The srand() function sets its argument as the seed for a new sequence  of
        pseudo-random  integers  to  be  returned by rand().  These sequences are
        repeatable by calling srand() with the same seed value.
 ```
-the `and` operation is done on each iteration of rand  with 15 and stored in v8, which is then xor'd with each character of the entered input. Through a loop, it is checked, if it equal to the values provided in v9.
+In each iteration, the AND operation is performed on the result of rand() with 15, and the outcome is stored in v8. Subsequently, this value is XORed with each character of the input provided. Through a loop, the program checks if the result matches the values stored in v9.
 
-On xoring the rand() values and the given decimals, we get the flag 
+By XORing the rand() values with the given decimals, the flag is derived.
 
 
 ```c
