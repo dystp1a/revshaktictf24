@@ -9,14 +9,13 @@
 <hr>
 
 ### Solution
-
-* unk_str after base64 decoded is `Shadows2024`. 
-* The func_1 is called with arguments unk_str and the input flag(unk_str0), where xor operation is performed on each character from unk_str0 w repeated sequence of unk_str.
-* The output of func_1 is passed to func_2, where an empty list unk_str3 is initialised. 
-* In 2 Loops, with every iteration over the input flag, it takes 2 values from the input str and stores it in the empty str. and returned to unk_str2
-* this final string is compared with a predefined set of ascii values(unk_arr0). If comparison is succesful, then the input is right.
+- After decoding the base64-encoded string, unk_str becomes Shadows2024.
+- The func_1 is called with arguments unk_str and the input flag (unk_str0). Within this function, a XOR operation is performed on each character from unk_str0 with a repeated sequence of unk_str.
+- The output of func_1 (unk_str1) is passed to func_2, where an empty list (unk_str3) is initialized.
+- In two loops, characters from unk_str1 are selected at specific indices in unk_str3, constructing a new string (unk_str2) which is then returned.
+- This final string (unk_str2) is compared with a predefined set of ASCII values (unk_arr0). If the comparison is successful, the input is considered correct.
 ### Solution script
-On reversing func_2, by inputting the given ascii values, and perform the same opertaions. We get the input to the func_2, which on xoring with Shadow2024, the flag is obatined.
+When reversing func_2 by inputting the given ASCII values and performing the same operations, we obtain the input to func_2. Upon XORing this input with Shadows2024, the flag is obtained.
 ``` python 
 def func_2():
     unk_str3 = [32, 0, 27, 30, 84, 79, 86, 22, 97, 100, 63, 95, 60, 34, 1, 71, 0, 15, 81, 68, 6, 4, 91, 40, 87, 0, 9, 59, 81, 83, 102, 21]
