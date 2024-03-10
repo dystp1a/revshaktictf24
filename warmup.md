@@ -15,6 +15,7 @@
 
 From the pseudocode, it takes an input and reverses it and stores it in s, and checks if it equal to s2.
 On reversing the string stored in s2, we get the flag
+
 correct input: shaktictf{th1s_15_4_w4rmUp_ch4ll3ng3_1nd33d!}
 
 
