@@ -47,4 +47,4 @@ a="Shadow2024Shadow2024Shadow2024Shadow2024"
 for i,j in zip(li,a):
   print(' '.join(chr(i^ord(j))),end="")
 ```
-``` shaktictf{Ul7r4_STe4l7h_SUcc3s5}```
+correct input: shaktictf{Ul7r4_STe4l7h_SUcc3s5}
