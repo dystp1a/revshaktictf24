@@ -15,4 +15,22 @@ the `and` operation is done on each iteration of rand  with 15 and stored in v8,
 
 On xoring the rand() values and the given decimals, we get the flag 
 
-![Screenshot 2024-03-09 113600](https://github.com/dystp1a/revshaktictf24/assets/143863591/9dd96a80-8014-42b7-a9d5-cd4ff55c56bf)
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+int i,j,k;
+int v8[36];
+char s[40];
+srand(123);
+for (i = 0; i <= 34; ++i)
+v8[i] = rand() & 0xF;
+int v9[35] = {114,109,96,101,115,98,104,122, 108, 122, 119, 100,49,84,119,49,108,99,89,103,98,49,108,88,49,125,83,126,59,98,105,48,108,49,114};
+for (j = 0; j <= 34; ++j)
+       s[j]=v9[j]^v8[j];
+printf("%s",s);}
+```
+
+correct input: shaktictf{wh0_s4id_fl4g_1s_r4nd0m?}
